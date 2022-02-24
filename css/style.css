@@ -1,39 +1,204 @@
- * {
-            box-sizing: border-box;
-            padding: 0;
-            margin: 0;
-        }
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+}
 
-        body {
-            font-family: sans-serif;
-            font-size: 16px;
-            color: #000;
-            line-height: 24px;
-            font-weight: 400;
-            background-color: #fff;
-            padding: 0;
-            margin: 0;
-        }
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+}
 
-        section {
-            background-color: mediumspringgreen;
-            padding: 50px;
-        }
 
-        h1 {
-            font-family: sans-serif;
-            font-size: 60px;
-            color: darkgreen;
-            line-height: 65px;
-            padding-bottom: 30px;
-            margin: 0;
-        }
+a {
+    text-decoration: none;
+    display: inline-block;
+}
 
-        p {
-            font-family: sans-serif;
-            font-size: 20px;
-            color: #000;
-            line-height: 30px;
-            padding-bottom: 30px;
-            margin: 0;
-        }
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*SECTION CSS*/
+.section-title {
+    position: relative;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+    background-color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: max-content;
+    padding: 0 60px 0 0;
+    margin: 0;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 1px;
+    background-color: #E59F30;
+}
+
+.section-subtitle {
+    font-family: 'GLITTEN ALL CAPS';
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+    background-color: #fff;
+    letter-spacing: 2px;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*CUSTOOM CSS*/
+
+.banner {
+    position: relative;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.banner header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 30px 0;
+    margin: 0;
+    background-color: lightcoral;
+    z-index: 99;
+}
+
+.banner header .header-top {
+    padding: 0 0 20px 0;
+    margin: 0;
+}
+
+.banner header .header-top .d-flex {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner header .header-bottom {
+    padding: 0;
+    margin: 0;
+}
+
+.banner header .header-bottom .primary-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px 0 0 0;
+    margin: 0;
+}
+
+.banner header .header-bottom .primary-nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+.banner header .header-bottom .primary-nav ul li {
+    padding: 0 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* For best practice, move CSS below to an external CSS file. */
+@keyframes fadeinall {
+    0% {
+        opacity: 1;
+    }
+
+    97% {
+        opacity: 0;
+    }
+
+    98% {
+        opacity: 0;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    99% {
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+#loader {
+    opacity: 1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    background-color: #000;
+    z-index: 9999;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation: fadeinall 1s normal both;
+    animation: fadeinall 1s normal both;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+#loader img {
+    filter: invert();
+}
+
+/*++++++++++++++++++++++++++++++
+        MEDIA QUERIES 
++++++++++++++++++++++++++++++++*/
+
+@media only screen and (orientation:landscape) {
+    body {
+        -webkit-text-size-adjust: none;
+    }
+}
+
+@media only screen and (orientation:portrait) {
+    body {
+        -webkit-text-size-adjust: none;
+    }
+}
+
+/*Break Points*/
+@media screen and (max-width: 1400px) {}

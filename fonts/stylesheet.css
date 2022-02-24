@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Glitten';
+    src: url('Glitten-Regular.woff2') format('woff2'),
+        url('Glitten-Regular.woff') format('woff'),
+        url('Glitten-Regular.svg#Glitten-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GLITTEN ALL CAPS';
+    src: url('GLITTENALLCAPSRegular.woff2') format('woff2'),
+        url('GLITTENALLCAPSRegular.woff') format('woff'),
+        url('GLITTENALLCAPSRegular.svg#GLITTENALLCAPSRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
