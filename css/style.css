@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Century Gothic', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
@@ -17,6 +17,7 @@ body {
 
 
 a {
+    color: #000;
     text-decoration: none;
     display: inline-block;
 }
@@ -34,8 +35,7 @@ ul {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
-    color: #000;
-    background-color: #fff;
+    color: #262B2F;
     letter-spacing: 2px;
     text-transform: uppercase;
     width: max-content;
@@ -54,16 +54,32 @@ ul {
     background-color: #E59F30;
 }
 
+
 .section-subtitle {
     font-family: 'GLITTEN ALL CAPS';
     font-size: 40px;
     font-weight: 400;
     line-height: 1.5;
-    color: #000;
-    background-color: #fff;
+    color: #262B2F;
     letter-spacing: 2px;
     padding: 0;
     margin: 0;
+}
+
+.btn {
+    font-family: 'Century Gothic';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    background-color: #fff;
+    letter-spacing: 2px;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #262B2F;
+    text-transform: uppercase;
+    padding: 25px 65px;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
 }
 
 
@@ -74,6 +90,7 @@ ul {
     height: 100vh;
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 .banner header {
@@ -83,7 +100,7 @@ ul {
     top: 0;
     padding: 30px 0;
     margin: 0;
-    background-color: lightcoral;
+    background-color: transparent;
     z-index: 99;
 }
 
@@ -96,6 +113,50 @@ ul {
     justify-content: space-between;
     align-items: center;
 }
+
+.banner header .header-top .social-icons-block {
+    padding: 0;
+    margin: 0;
+}
+
+.banner header .header-top .social-icons-block a {
+    font-family: 'Century Gothic'sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 0;
+    margin: 0 0 0 10px;
+    transition: 0.3s;
+
+}
+
+.banner header .header-top .social-icons-block a:hover {
+    color: #d39d3c;
+}
+
+.banner header .header-top .logo-block {
+    width: 180px;
+    padding: 0;
+    margin: 0;
+}
+
+.banner header .header-top .phone-block a {
+    font-family: inherit;
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.3;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.banner header .header-top .phone-block a:hover {
+    color: #e29d21;
+}
+
 
 .banner header .header-bottom {
     padding: 0;
@@ -119,6 +180,547 @@ ul {
 .banner header .header-bottom .primary-nav ul li {
     padding: 0 30px;
 }
+
+.banner header .header-bottom .primary-nav ul li a {
+    font-family: 'Century Gothic'sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    letter-spacing: 150;
+    text-transform: uppercase;
+    transition: 0.3s;
+    padding: 0;
+    margin: 0;
+}
+
+.banner header .header-bottom .primary-nav ul li.active a {
+    color: #d39d3c;
+}
+
+.banner header .header-bottom .primary-nav ul li a:hover {
+
+    color: #e29d21;
+}
+
+.banner .desc {
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+
+.banner .desc .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .desc .hero-text {
+    padding: 0 2%;
+    margin: 0;
+}
+
+.banner .desc .hero-text h1 {
+    font-family: 'GLITTEN';
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #e29d21;
+    color: #FFB437;
+    text-transform: lowercase;
+    padding: 190px 0 74px 0;
+    margin: 0;
+}
+
+.banner .desc .hero-text h1 span {
+    display: block;
+    font-size: 70px;
+    color: #fff;
+}
+
+.banner .desc .hero-text p {
+    font-family: 'Century Gothic'sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    letter-spacing: 2;
+    transition: 0.3s;
+    padding: 0 24%;
+    margin: 0 0 65px 0;
+}
+
+.banner .desc .hero-text a {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    border: 1px solid #fff;
+    letter-spacing: 2px;
+    color: #fff;
+    border-radius: 4px;
+    padding: 25px 65px;
+    margin: 0;
+}
+
+.banner .desc .hero-text a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/*BANNER END*/
+
+/*ABOUT SECTION START*/
+
+.about-section {
+    background-color: #fff;
+    background-image: url("../images/about-section-bg.png");
+    background-repeat: repeat;
+    background-position: left top;
+    background-size: auto;
+    padding: 80px 0;
+    margin: 0;
+    border-bottom: 1px solid #E2E2E2;
+}
+
+.about-section .title-block {
+    padding: 0;
+    margin: 0;
+}
+
+.about-section .title-block h3 {
+    padding: 0 0 60px 0;
+    margin: 0;
+}
+
+.about-section .img-block {
+    border: 1px solid #000;
+}
+
+.about-section .img-block img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.about-section .text-block {
+    padding: 0;
+    margin: 0;
+}
+
+.about-section .text-block .top-block {
+    padding: 0;
+    margin: 0;
+}
+
+.about-section .text-block .top-block h4 {
+    font-family: inherit;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #eba72d;
+    padding: 0 0 30px 0;
+    margin: 0;
+}
+
+.about-section .text-block .top-block p {
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+    font-style: italic;
+    color: #000;
+    padding: 0;
+    margin: 0 0 18px 0;
+}
+
+.about-section .text-block .mid-block {
+    padding: 0;
+    margin: 0;
+}
+
+.about-section .text-block .mid-block ul li {
+    position: relative;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #000;
+    padding: 0 0 0 27px;
+    margin: 0 0 20px 0;
+
+}
+
+.about-section .text-block .mid-block ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: none;
+    outline: 2px solid #eba72d;
+}
+
+.about-section .text-block .mid-block ul li a {
+    color: #000;
+    padding: 0;
+    margin: 0;
+
+}
+
+.about-section .text-block .buttom-block {
+    padding: 0;
+    margin: 0;
+}
+
+.about-section .text-block .bottom-block p {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+    padding: 10px 0 21px 0;
+    margin: 0;
+}
+
+.about-section .text-block .bottom-block .btn:hover {
+    background-color: transparent;
+    color: #262B2F;
+    border: 1px solid #262B2F;
+}
+
+/*about end*/
+
+/*skil start*/
+
+.skills-section {
+    background-image: url("../images/about-section-bg.png");
+    background-repeat: repeat;
+    background-position: left top;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.skills-section .title-block h3 {
+    padding: 0 0 60px 0;
+    margin: 0;
+}
+
+.skills-section .all-skills-section {
+    padding: 0;
+    margin: 0;
+}
+
+.skills-section .all-skills-section .card {
+    background-color: #262B2F;
+    text-align: center;
+    border-radius: 5px;
+    min-height: 408px;
+    padding: 50px 40px;
+    margin: 0 0 25px 0;
+}
+
+.skills-section .all-skills-section .card .icon-block {
+    padding: 0;
+    margin: 0;
+}
+
+.skills-section .all-skills-section .card .text-block {
+    padding: 0;
+    margin: 0;
+}
+
+.skills-section .all-skills-section .card .text-block h3 {
+    position: relative;
+    font-family: inherit;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 50px 0 20px 0;
+    margin: 0 0 30px 0;
+}
+
+.skills-section .all-skills-section .card .text-block h3::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 1px;
+    background-color: #fff;
+}
+
+.skills-section .all-skills-section .card .text-block p {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+/*Skills Section End*/
+
+/*Contact Section Start*/
+
+.contact-section {
+    background-image: url("../images/about-section-bg.png");
+    background-repeat: repeat;
+    background-position: left top;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-color: #fff;
+    padding: 80px 0;
+    margin: 0;
+}
+
+.contact-section .form-group {
+    padding: 0;
+    margin: 80px 0 0 0;
+}
+
+.contact-section .form-group .form-control {
+    border-radius: 0;
+    border: 1px solid #000;
+    background-color: transparent;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.contact-section .form-group .form-control::placeholder {
+    color: #000;
+}
+
+.contact-section .form-group textarea.form-control {
+    height: 150px;
+    resize: none;
+}
+
+.contact-section .form-group .form-control:focus {
+    box-shadow: none;
+}
+
+.contact-section .form-group .btn-submit:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+/*contact-section-end*/
+footer {
+    background-color: #fff;
+    background-image: url("../images/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 68px 0 40px 0;
+    margin: 0;
+}
+
+footer .address-block {
+    display: flex;
+    background-color: #fdfdfd;
+    border: 1px solid #FFB437;
+    padding: 30px;
+    margin-bottom: 30px;
+    min-height: 116px;
+}
+
+footer .address-block .text-block a {
+    color: #000;
+    padding: 0;
+    margin: 0;
+    transition: 0.3s;
+}
+
+footer .address-block .text-block a:hover {
+    color: #e29d21;
+}
+
+footer .address-block .text-block {
+    padding: 0;
+    margin: 0;
+}
+
+footer .address-block .text-block ion-icon {
+    margin-right: 5px;
+}
+
+footer .address-block .text-block h4 {
+
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #000;
+    text-transform: capitalize;
+    padding: 0 0 15px 0;
+    margin: 0;
+    /*
+    display: inline-flex;
+    align-items: center;
+*/
+}
+
+footer .address-block .text-block p {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #000;
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+}
+
+/*footer end*/
+/*copyright-section-start*/
+
+.copyright-section {
+    background-color: #000;
+    padding: 30px;
+    margin: 0;
+}
+
+.copyright-section p {
+    text-align: center;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*To Top Button*/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border: 1px solid #E29D22;
+    outline: none;
+    background-color: #E29D22;
+    color: #fff;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    z-index: 999;
+    text-align: center;
+    line-height: 30px;
+    transition: 0.3s;
+}
+
+#myBtn:hover {
+    background-color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
