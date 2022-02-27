@@ -5,7 +5,7 @@
     <title>Monish Roy - Front-end Designer and Developer</title>
     <meta charset="UTF-8" />
     <meta name="description" content="I'm Monish Roy, a Web designer and front-end developer from West Bengal. I am a fresher in this field, I have experience designing and coding websites." />
-    <link rel="icon" href="favicon.png">
+    <link rel="icon" href="./favicon.png">
     <meta name="theme-color" content="#000000">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="I have one-year of learning experience in Graphics Design, Web Design, and Development at Learn Computer Academy, Habra." />
@@ -85,7 +85,7 @@
                 <div class="hero-text" data-aos="fade-down" data-aos-duration="2000">
                     <h1 class="text-center"><span>hi, i am a</span> front-end web designer and developer.</h1>
                     <p data-aos="fade-down">I have one-year of learning experience in Graphics Design, Web Design, and Development at Learn Computer Academy, Habra.</p>
-                    <a href="#" class="btn">download resume</a>
+                    <a href="images/resume-of-monish-roy-frontend-web-designer-and-developer.jpg" class="btn" download>download resume</a>
                 </div>
             </div>
         </section>
@@ -110,13 +110,13 @@
                     <div class="text-block" data-aos="fade-left" data-aos-duration="1000">
                         <div class="top-block">
                             <h4>Graphic Designer &amp; WEB DEVELOPER</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ipsa molestiae nesciunt omnis sapiente aperiam, repudiandae libero eius dolore pariatur.</p>
+                            <p>My experience is as a graphic designer and front-end developer, and I have taken part in a number of web projects as part of my learning process. I am eager to work on live projects in renowned web agencies.</p>
                         </div>
 
                         <div class="mid-block">
                             <ul>
-                                <li><strong>Birthday:</strong> 24 Sep 1997</li>
-                                <li><strong>Email:</strong> <a href="mailto:monish.lca2022@gmail">monish.lca2022@gmail.com</a></li>
+                                <li><strong>D.O.B:</strong> 24 Sep 1997</li>
+                                <li><strong>E-mail:</strong> <a href="mailto:monish.lca2022@gmail">monish.lca2022@gmail.com</a></li>
                                 <li><strong>Phone:</strong> <a href="tel:7003211502">700 3211 502</a></li>
                                 <li><strong>City:</strong> Ashoknagar, West Bengal</li>
                             </ul>
@@ -232,33 +232,41 @@
                     <h3 class="section-subtitle">please feel free to contact</h3>
                 </div>
                 <div class="form-group">
-                    <form action="https://api.web3forms.com/submit" method="POST">
-                       <input type="hidden" name="access_key" value="f0aba67c-f58d-4cac-a53a-95823cd5ab85">
+                    <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                        <input type="hidden" name="access_key" value="f0aba67c-f58d-4cac-a53a-95823cd5ab85">
                         <div class="row">
-                            <div class="col-md-6">
-                                <div class="input-group">
-                                    <input type="text" placeholder="Your Name" class="form-control" required>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="input-group" data-aos="fade-up" data-aos-duration="1000">
+                                    <input type="text" placeholder="Your Name*" name="name" class="form-control" required>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="input-group">
-                                    <input type="email" placeholder="Your Email" class="form-control" required>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="input-group" data-aos="fade-up" data-aos-duration="1000">
+                                    <input type="email" placeholder="Your Email*" name="email" class="form-control" required>
                                 </div>
                             </div>
-                            <div class="col-md-12">
-                                <div class="input-group">
-                                    <input type="text" placeholder="Subject" class="form-control" required>
+                            <div class="col-md-12 col-sm-12">
+                                <div class="input-group" data-aos="fade-up" data-aos-duration="1000">
+                                    <input type="tel" placeholder="Phone*" name="phone" class="form-control" required>
                                 </div>
                             </div>
-                            <div class="col-md-12">
-                                <div class="input-group">
-                                    <textarea placeholder="Message" class="form-control"></textarea>
+                            <div class="col-md-12 col-sm-12">
+                                <div class="input-group" data-aos="fade-up" data-aos-duration="1000">
+                                    <input type="text" placeholder="Subject*" name="subject" class="form-control" required>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="input-group">
+                            <div class="col-md-12 col-sm-12">
+                                <div class="input-group" data-aos="fade-up" data-aos-duration="1000">
+                                    <textarea placeholder="Message" name="message" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-12">
+                                <div class="input-group" data-aos="fade-up" data-aos-duration="1000">
                                     <input type="submit" value="submit" class="btn btn-submit">
                                 </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12">
+                                <span id="result"></span>
                             </div>
                         </div>
                     </form>
@@ -272,37 +280,40 @@
         <div class="container">
             <div class="row">
                 <div class="col-6">
-                    <div class="address-block">
+                    <div class="address-block" data-aos="fade-up" data-aos-duration="1000">
                         <div class="text-block">
                             <h4>
                                 <ion-icon name="pin"></ion-icon> My Address
                             </h4>
-                            <p>A108 Adam Street, New York, NY 535022</p>
+                            <p>Ashoknagar, Habra, West Bengal, 743272</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-6">
-                    <div class="address-block">
+                    <div class="address-block" data-aos="fade-up" data-aos-duration="1000">
                         <div class="text-block">
                             <h4>
                                 <ion-icon name="share-alt"></ion-icon> Social Profiles
                             </h4>
-                            <a href="#">
+                            <a href="https://www.facebook.com/profile.php?id=100008793816711" target="_blank">
                                 <ion-icon name="logo-facebook"></ion-icon>
                             </a>
-                            <a href="#">
+                            <a href="https://wa.me/7003211502">
                                 <ion-icon name="logo-whatsapp"></ion-icon>
                             </a>
-                            <a href="#">
+                            <a href="#" target="_blank">
                                 <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                            <a href="https://github.com/monishlca2022" target="_blank">
+                                <ion-icon name="logo-github"></ion-icon>
                             </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-6">
-                    <div class="address-block">
+                    <div class="address-block" data-aos="fade-up" data-aos-duration="1000">
                         <div class="text-block">
                             <h4>
                                 <ion-icon name="mail"></ion-icon> Email Address
@@ -313,7 +324,7 @@
                 </div>
 
                 <div class="col-6">
-                    <div class="address-block">
+                    <div class="address-block" data-aos="fade-up" data-aos-duration="1000">
                         <div class="text-block">
                             <h4>
                                 <ion-icon name="call"></ion-icon>My Phone
@@ -329,7 +340,7 @@
     <!-- copyright-section-start -->
     <section>
         <div class="copyright-section">
-            <p>© Copyright 2022. Designed with <ion-icon name="heart"></ion-icon> by Monish Roy.</p>
+            <p>&copy; Copyright <span id="year"></span>. Designed and developed with <ion-icon name="heart" style="color:indianred;"></ion-icon> by Monish Roy.</p>
         </div>
     </section>
 
