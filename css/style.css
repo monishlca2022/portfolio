@@ -31,7 +31,7 @@ ul {
 /*SECTION CSS*/
 .section-title {
     position: relative;
-    font-family: sans-serif;
+    font-family: inherit;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
@@ -61,7 +61,7 @@ ul {
     font-weight: 400;
     line-height: 1.5;
     color: #262B2F;
-    letter-spacing: 2px;
+    /*    letter-spacing: 2px;*/
     padding: 0;
     margin: 0;
 }
@@ -203,8 +203,28 @@ ul {
 }
 
 .banner header .header-bottom .primary-nav ul li a:hover {
-
     color: #e29d21;
+}
+
+.banner header .header-bottom .mobile-menu {
+    display: none;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 30px;
+}
+
+.banner header .header-bottom .mobile-menu .btn {
+    padding: 10px 18px;
+}
+
+.banner header .header-bottom .mobile-menu .btn:hover {
+    background-color: #ffb437;
+    color: #262b2f;
+}
+
+.banner header .header-bottom .mobile-menu .btn:active {
+    box-shadow: none;
+    transform: scale(0.95);
 }
 
 .banner .desc {
@@ -235,7 +255,6 @@ ul {
     font-size: 100px;
     font-weight: 400;
     line-height: 1.2;
-    color: #e29d21;
     color: #FFB437;
     text-transform: lowercase;
     padding: 190px 0 74px 0;
@@ -381,7 +400,7 @@ ul {
 
 }
 
-.about-section .text-block .buttom-block {
+.about-section .text-block .bottom-block {
     padding: 0;
     margin: 0;
 }
@@ -394,6 +413,15 @@ ul {
     color: #000;
     padding: 10px 0 21px 0;
     margin: 0;
+}
+
+.about-section .text-block .bottom-block p > a.link {
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.about-section .text-block .bottom-block p > a.link:hover {
+    color: #ffb437;
 }
 
 .about-section .text-block .bottom-block .btn:hover {
@@ -508,10 +536,11 @@ ul {
     line-height: 1.3;
     font-weight: 400;
     border-radius: 0;
-    border: 1px solid #000;
+    border: 1px solid #262B2F;
     background-color: transparent;
     padding: 30px;
     margin-bottom: 30px;
+    transition: 0.3s;
 }
 
 .contact-section .form-group .form-control::placeholder {
@@ -525,12 +554,13 @@ ul {
 
 .contact-section .form-group .form-control:focus {
     box-shadow: none;
+    border: 1px solid #FFB437;
 }
 
 .contact-section .form-group .btn-submit:hover {
     background-color: #fff;
     color: #000;
-    border: 1px solid #000;
+    border: 1px solid #262B2F;
 }
 
 .contact-section .form-group #result {
@@ -637,6 +667,72 @@ footer .address-block .text-block p {
     vertical-align: middle;
 }
 
+/*Mobile Menu*/
+.sidemenu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #FFB437;
+    z-index: 9999;
+    box-shadow: 2px 0 30px 0 rgba(0, 0, 0, 0.3);
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidemenu.slide-in {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.sidemenu .inner-menu {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px 20px 50px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.sidemenu .inner-menu .btn-close {
+    position: absolute;
+    right: 10%;
+    top: 3%;
+    transition: 0.3s;
+}
+
+.sidemenu .inner-menu .btn-close:active {
+    transform: scale(0.9);
+}
+
+.sidemenu .inner-menu ul li {
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.sidemenu .inner-menu ul li a {
+    font-family: 'GLITTEN ALL CAPS';
+    font-size: 20px;
+    color: #000;
+    line-height: 1.3;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.sidemenu .inner-menu ul li.active a {
+    transform: translateX(20px);
+}
+
+.sidemenu .inner-menu ul li a:hover {
+    transform: translateX(20px);
+}
+
 /*To Top Button*/
 #myBtn {
     display: none;
@@ -663,155 +759,6 @@ footer .address-block .text-block p {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* For best practice, move CSS below to an external CSS file. */
-@keyframes fadeinall {
-    0% {
-        opacity: 1;
-    }
-
-    97% {
-        opacity: 0;
-    }
-
-    98% {
-        opacity: 0;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-
-    99% {
-        opacity: 0;
-        -webkit-transform: translateY(-100%);
-        transform: translateY(-100%);
-    }
-
-    100% {
-        opacity: 0;
-        z-index: -1;
-    }
-}
-
-#loader {
-    opacity: 1;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-    background-color: #000;
-    z-index: 9999;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation: fadeinall 1s normal both;
-    animation: fadeinall 1s normal both;
-    -webkit-animation-delay: 0.3s;
-    animation-delay: 0.3s;
-}
-
-#loader img {
-    filter: invert();
-}
-
 /*++++++++++++++++++++++++++++++
         MEDIA QUERIES 
 +++++++++++++++++++++++++++++++*/
@@ -829,4 +776,12 @@ footer .address-block .text-block p {
 }
 
 /*Break Points*/
-@media screen and (max-width: 1400px) {}
+@media screen and (max-width: 480px) {
+    .banner header .header-bottom .primary-nav {
+        display: none;
+    }
+
+    .banner header .header-bottom .mobile-menu {
+        display: block;
+    }
+}

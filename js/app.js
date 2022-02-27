@@ -1,9 +1,9 @@
 //Preloader
-window.addEventListener('load', function () {
-    setTimeout(function () {
-        document.getElementById("loader").remove();
-    }, 10000);
-});
+//window.addEventListener('load', function () {
+//    setTimeout(function () {
+//        document.getElementById("loader").remove();
+//    }, 10000);
+//});
 
 //To Top Button
 //Get the button:
@@ -80,3 +80,45 @@ form.addEventListener("submit", function (e) {
             }, 5000);
         });
 });
+
+//Tooltip
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+
+//Mobile Menu
+
+let mobileMenuTrigger = document.getElementById('mobile-menu-trigger');
+let drawer = document.getElementById('drawer');
+let closeBtn = document.getElementById('close-btn');
+
+mobileMenuTrigger.addEventListener('click', () => {
+    drawer.classList.add('slide-in');
+});
+
+closeBtn.addEventListener('click', () => {
+    drawer.classList.remove('slide-in');
+});
+
+//Add-Remove Active Class From Primary Menu
+const activeLink = document.querySelectorAll('.primary-nav ul li');
+for (let clickTab of activeLink) {
+    clickTab.onclick = function () {
+        let activeClass = document.querySelectorAll('li.active');
+        activeClass[0].classList.remove('active')
+        clickTab.classList.add('active');
+    }
+}
+
+//Sidebar Menu List Active Deactive Class
+const activeLinkSidebar = document.querySelectorAll('.sidemenu .inner-menu ul li');
+
+for (let clickTab of activeLinkSidebar) {
+    clickTab.addEventListener('click', function () {
+        let activeClass = document.querySelectorAll('.sidemenu .inner-menu ul li.active');
+        console.log(activeClass);
+        activeClass[0].classList.remove('active')
+        clickTab.classList.add('active');
+    })
+}

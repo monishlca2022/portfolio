@@ -17,17 +17,22 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- CUSTOM CSS -->
+    <link rel="stylesheet" type="text/css" href="css/preloader.css" />
     <link rel="stylesheet" type="text/css" href="css/fonts.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- ION ICONS CDNs -->
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
     <noscript>Your browser does not support JavaScript!</noscript>
     <!-- PRELOADER -->
 
-    <!--     <div id="loader">
+    <div id="loader">
         <img src="images/loader.gif" alt="Loader" />
-    </div> -->
+    </div>
 
 
     <!-- BANNER START -->
@@ -40,26 +45,29 @@
                     <div class="d-flex">
                         <!-- SOCIAL ICONS -->
                         <div class="social-icons-block">
-                            <a href="#">
+                            <a href="https://wa.me/7003211502" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Whatsapp">
+                                <ion-icon name="logo-whatsapp"></ion-icon>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=100008793816711" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Facebook">
                                 <ion-icon name="logo-facebook"></ion-icon>
                             </a>
-                            <a href="#">
+                            <a href="#" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Instagram">
                                 <ion-icon name="logo-instagram"></ion-icon>
                             </a>
-                            <a href="#">
-                                <ion-icon name="logo-whatsapp"></ion-icon>
+                            <a href="https://github.com/monishlca2022" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Github">
+                                <ion-icon name="logo-github"></ion-icon>
                             </a>
                         </div>
 
                         <!-- LOGO -->
                         <div class="logo-block">
-                            <a href="#"><img src="images/logo.png" alt="logo" class="img-fluid"></a>
+                            <a href="#"><img src="images/logo.png" alt="Monish Roy, Web Designer and Front-end Developer." class="img-fluid"></a>
                         </div>
 
                         <!-- PHONE -->
                         <div class="phone-block">
-                            <a href="tel:7003211502">
-                                <ion-icon name="call"></ion-icon> 7003-211-502
+                            <a href="tel:7003211502" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Say Hello">
+                                <ion-icon name="call"></ion-icon> 7003 211 502
                             </a>
                         </div>
                     </div> <!-- .d-flex -->
@@ -71,11 +79,14 @@
                     <nav class="primary-nav">
                         <ul class="d-flex">
                             <li class="active"><a href="index.html">home</a></li>
-                            <li><a href="#">about</a></li>
-                            <li><a href="#">skills</a></li>
-                            <li><a href="#">works</a></li>
-                            <li><a href="#">contact</a></li>
+                            <li><a href="#about-section">about</a></li>
+                            <li><a href="#skills-section">skills</a></li>
+                            <li><a href="#works-section">works</a></li>
+                            <li><a href="#contact-section">contact</a></li>
                         </ul>
+                    </nav>
+                    <nav class="mobile-menu" data-aos="fade-down">
+                        <button class="btn" id="mobile-menu-trigger">MENU <ion-icon name="menu"></ion-icon></button>
                     </nav>
                 </div>
             </div>
@@ -85,14 +96,14 @@
                 <div class="hero-text" data-aos="fade-down" data-aos-duration="2000">
                     <h1 class="text-center"><span>hi, i am a</span> front-end web designer and developer.</h1>
                     <p data-aos="fade-down">I have one-year of learning experience in Graphics Design, Web Design, and Development at Learn Computer Academy, Habra.</p>
-                    <a href="images/resume-of-monish-roy-frontend-web-designer-and-developer.jpg" class="btn" download>download resume</a>
+                    <a href="images/resume-of-monish-roy-frontend-web-designer-and-developer.jpg" class="btn" download="MonishRoy-Resume">download resume</a>
                 </div>
             </div>
         </section>
     </div>
 
     <!-- about-start -->
-    <section class="about-section">
+    <section class="about-section" id="about-section">
         <div class="container">
 
             <div class="title-block">
@@ -137,7 +148,7 @@
     <!--    ABOUT END-->
 
     <!--SKILLS SECTION START-->
-    <section>
+    <section id="skills-section">
         <div class="skills-section">
             <div class="container">
                 <div class="title-block">
@@ -224,7 +235,7 @@
         </div>
     </section>
     <!--contact-section start-->
-    <section>
+    <section id="contact-section">
         <div class="contact-section">
             <div class="container">
                 <div class="title-block">
@@ -351,34 +362,25 @@
     </button>
 
 
-    <!-- ICONS SETS -->
-
-    <!--
-    <ion-icon name="logo-whatsapp"></ion-icon>
-    <ion-icon name="logo-instagram"></ion-icon>
-    <ion-icon name="call"></ion-icon>
-    <ion-icon name="mail"></ion-icon>
-    <ion-icon name="share-alt"></ion-icon>
-    <ion-icon name="pin"></ion-icon>
-    <ion-icon name="logo-github"></ion-icon>
-    <ion-icon name="arrow-round-up"></ion-icon>
-    <ion-icon name="logo-facebook"></ion-icon>
-    <ion-icon name="heart"></ion-icon>
--->
-
-
-
-
-
-
-
+    <div class="sidemenu" id="drawer">
+        <div class="inner-menu">
+            <div class="btn-close" id="close-btn" role="button"></div>
+            <ul aria-label="menu">
+                <li class="active"><a href="index.html">home</a></li>
+                <li><a href="#about-section">about</a></li>
+                <li><a href="#skills-section">skills</a></li>
+                <li><a href="#works-section">works</a></li>
+                <li><a href="#contact-section">contact</a></li>
+            </ul>
+        </div>
+    </div>
 
     <!-- JQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CDNs -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<!--    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>-->
 
     <!-- AOS CDN JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
