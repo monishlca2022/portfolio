@@ -268,12 +268,11 @@ ul {
 }
 
 .banner .desc .hero-text p {
-    font-family: 'Century Gothic'sans-serif;
+    font-family: 'Century Gothic', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
     color: #fff;
-    letter-spacing: 2;
     transition: 0.3s;
     padding: 0 24%;
     margin: 0 0 65px 0;
@@ -345,7 +344,7 @@ ul {
     font-family: inherit;
     font-size: 30px;
     font-weight: 700;
-    line-height: 1;
+    line-height: 1.3;
     text-transform: uppercase;
     color: #eba72d;
     padding: 0 0 30px 0;
@@ -371,7 +370,7 @@ ul {
 .about-section .text-block .mid-block ul li {
     position: relative;
     font-family: inherit;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.3;
     color: #000;
@@ -418,6 +417,7 @@ ul {
 .about-section .text-block .bottom-block p > a.link {
     font-weight: 600;
     transition: 0.3s;
+    display: inline;
 }
 
 .about-section .text-block .bottom-block p > a.link:hover {
@@ -858,6 +858,153 @@ footer .address-block .text-block p {
 }
 
 /*Break Points*/
+@media screen and (max-width: 1366px) {
+    .banner .desc .hero-text h1 span {
+        font-size: 55px;
+    }
+.banner .desc .hero-text h1 {
+    font-size: 70px;
+
+    padding: 140px 0 28px 0;
+
+}
+.banner .desc .hero-text p {
+   
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    letter-spacing: 2;
+    transition: 0.3s;
+    padding: 0 12%;
+    margin: 0 0 40px 0;
+}
+.banner .desc .hero-text a {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    border: 1px solid #fff;
+    letter-spacing: 2px;
+    color: #fff;
+    border-radius: 4px;
+    padding: 17px 34px;
+    margin: 0;
+}
+}
+
+@media screen and (max-width: 1199px) {
+    .banner .desc .hero-text h1 {
+    font-size: 55px;
+    padding: 120px 0 28px 0;
+}
+.banner .desc .hero-text h1 span {
+    font-size: 45px;
+}
+.banner .desc .hero-text p{
+    font-size: 16px;
+}
+.skills-section .all-skills-section .card {
+
+    min-height: 434px;
+
+}
+
+}
+
+@media screen and (max-width: 991px) {
+    .banner .desc .hero-text h1 {
+    font-size: 49px;
+        padding: 50px 0 19px 0;
+    }
+    .banner .desc .hero-text h1 span {
+    font-size: 35px;
+    }
+    .banner .desc .hero-text p {
+    padding: 0;
+    margin: 0 0 40px 0;
+    }
+    .banner .desc .hero-text a {
+    padding: 12px 24px;
+    }
+    .skills-section .all-skills-section .col-md-4{
+        width:50%;
+    }
+    .my-work-section .col-md-4{
+        width:50%;
+    }
+    footer .address-block {
+    min-height: 137px;
+}
+}
+
+@media screen and (max-width: 900px) {
+.banner .desc .hero-text h1 {
+    font-size: 36px;
+    padding: 100px 0 19px 0;
+}
+.banner .desc .hero-text h1 span {
+    font-size: 25px;
+}
+.banner .desc .hero-text p {
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+.about-section{
+    padding: 50px 0;
+}
+.about-section .title-block h3 {
+    padding: 0 0 30px 0;
+    margin: 0;
+}
+}
+
+@media screen and (max-width: 768px) {
+    .skills-section .all-skills-section .col-md-4{
+        width:100%;
+    }
+        .my-work-section .col-md-4{
+        width:100%;
+    }
+    .banner .desc .hero-text h1 {
+    font-size: 30px;
+    padding: 137px 0 19px 0;
+}
+.banner .desc .hero-text a {
+    font-size: 12px;
+}
+/*.about-section .col-md-4{
+    width: 40%;
+}
+.about-section .col-md-8{
+    width: 60%;
+}*/
+.about-section .text-block {
+    padding: 30px 0 0 0;
+    margin: 0;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 480px) {
     .banner header .header-bottom .primary-nav {
         display: none;
@@ -865,5 +1012,9 @@ footer .address-block .text-block p {
 
     .banner header .header-bottom .mobile-menu {
         display: block;
+    }
+    .banner header .header-top .phone-block a{
+        
+        
     }
 }
