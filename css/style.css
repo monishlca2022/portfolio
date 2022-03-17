@@ -86,11 +86,14 @@ ul {
 /*CUSTOOM CSS*/
 
 .banner {
-    position: relative;
+/*    position: relative;*/
+    background-image: url(../images/banner-2.jpg);
+    background-repeat: no-repeat;
+    background-position: cover;
     height: 100vh;
     padding: 0;
     margin: 0;
-    overflow: hidden;
+/*    overflow: hidden;*/
 }
 
 .banner header {
@@ -1167,9 +1170,12 @@ footer .address-block .text-block p {
 
 
 @media screen and (max-width: 370px){
-    .banner .desc .hero-text h1 {
-    font-size: 36px;
-    padding: 0 0 20px 0;
+.banner .desc .hero-text h1 {
+    font-size: 25px;
+    padding: 50px 0 20px 0;
+}
+    .section-subtitle {
+    font-size: 25px;
 }
 }
 
