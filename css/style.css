@@ -327,6 +327,10 @@ ul {
 }
 
 .about-section .img-block {
+/*
+    border-radius: 30px;
+    overflow: hidden;
+*/
     border: 1px solid #000;
 }
 
