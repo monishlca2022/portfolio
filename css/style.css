@@ -188,26 +188,30 @@ ul {
 }
 
 .banner header .header-bottom .primary-nav ul li a {
-    font-family: 'Century Gothic'sans-serif;
+    font-family: 'Century Gothic',sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
     color: #fff;
-    letter-spacing: 150;
+    letter-spacing: 1px;
     text-transform: uppercase;
     transition: 0.3s;
-    padding: 0;
+    padding: 0 0 5px 0;
     margin: 0;
 }
 
 .banner header .header-bottom .primary-nav ul li.active a {
     color: #d39d3c;
+   /* border-bottom: 1px solid #e29d21;*/
 }
 
 .banner header .header-bottom .primary-nav ul li a:hover {
     color: #e29d21;
 }
-
+.banner header .header-bottom .primary-nav ul li a.hvr-underline-from-center:before{
+    background-color: #d39d3c;
+    height: 1px;
+}
 .banner header .header-bottom .mobile-menu {
     display: none;
     text-align: center;
@@ -288,16 +292,19 @@ ul {
     font-size: 14px;
     font-weight: 600;
     line-height: 1.5;
-    border: 1px solid #fff;
+    border: 1px solid #d39d3c;
     letter-spacing: 2px;
-    color: #fff;
+    color: #d39d3c;
     border-radius: 4px;
-    padding: 25px 65px;
+    padding: 25px 40px;
     margin: 0;
 }
-
+.banner .desc .hero-text a ion-icon{
+    vertical-align: middle;
+}
 .banner .desc .hero-text a:hover {
     background-color: #fff;
+    border: 1px solid #d39d3c;
     color: #000;
 }
 
@@ -1158,6 +1165,10 @@ footer .address-block .text-block p {
 
     }
 
+.banner .desc .hero-text h1 {
+    font-size: 32px;
+}
+
     .about-section .text-block .bottom-block .btn {
         padding: 18px 36px;
     }
@@ -1175,11 +1186,16 @@ footer .address-block .text-block p {
 
 @media screen and (max-width: 370px){
 .banner .desc .hero-text h1 {
-    font-size: 25px;
-    padding: 50px 0 20px 0;
+    font-size: 40px;
+    padding: 100px 0 20px 0;
 }
     .section-subtitle {
     font-size: 25px;
+}
+
+.skills-section .all-skills-section .card {
+    min-height: max-content;
+    padding: 30px 20px;
 }
 }
 
