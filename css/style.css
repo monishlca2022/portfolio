@@ -87,9 +87,10 @@ ul {
 
 .banner {
 /*    position: relative;*/
-    background-image: url(../images/banner-2.jpg);
+    background-image: url("../images/banner-2.jpg");
     background-repeat: no-repeat;
-    background-position: cover;
+    background-size: auto;
+    background-position: center;
     height: 100vh;
     padding: 0;
     margin: 0;
@@ -910,7 +911,7 @@ footer .address-block .text-block p {
     }
 
     .banner .desc .hero-text a {
-        font-family: inherit;
+        /*font-family: inherit;
         font-size: 14px;
         font-weight: 600;
         line-height: 1.5;
@@ -919,7 +920,7 @@ footer .address-block .text-block p {
         color: #fff;
         border-radius: 4px;
         padding: 17px 34px;
-        margin: 0;
+        margin: 0;*/
     }
 }
 
