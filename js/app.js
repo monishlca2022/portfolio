@@ -1,12 +1,12 @@
 //Preloader
-//window.addEventListener('load', function () {
-//    setTimeout(function () {
-//        document.getElementById("loader").remove();
-//    }, 10000);
-//});
+window.addEventListener('load', function () {
+   setTimeout(function () {
+       document.getElementById("loader").remove();
+   }, 10000);
+});
 
 //To Top Button
-//Get the button:
+//Get the button
 mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
