@@ -558,21 +558,48 @@ ul {
 }
 
 .my-work-section .works-block .project .img-block {
+    position: relative;
     text-align: center;
     padding: 50px;
     margin: 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.my-work-section .works-block .project .img-block img {
+    transition: transform 0.3s ease-in-out .3s;
+}
+
+.my-work-section .works-block .project .img-block:hover img {
+    transform: scale(1.2);
 }
 
 .my-work-section .works-block .project .text-block {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
     border-radius: 0 0 5px 5px;
     background-color: #fff;
     padding: 20px 20px;
+    z-index: 333;
+    background-color: rgba(255, 255, 255, 0.98);
+    dackdrop-filter: blur(10px);
+    transition: all 0.5s ease-in-out;
+    height: 100%;
+    border-radius: 5px;
 }
 
-.my-work-section .works-block .project .text-block h4 {
+.my-work-section .works-block .project .text-block .left-block {
+    text-align: center;
+}
+
+.my-work-section .works-block .project .text-block .left-block h4 {
     font-family: 'GLITTEN';
     font-size: 25px;
     font-weight: 400;
@@ -582,17 +609,21 @@ ul {
     margin: 0;
 }
 
-.my-work-section .works-block .project .text-block small {
+.my-work-section .works-block .project .text-block .left-block small {
     font-family: inherit;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 1.2;
+    text-align: left;
     color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     padding: 0;
     margin: 0;
 }
 
-.my-work-section .works-block .project .text-block a {
+/*
+.my-work-section .works-block .project .text-block .link-block a {
     font-family: inherit;
     font-size: 15px;
     font-weight: 400;
@@ -604,7 +635,11 @@ ul {
     margin: 0;
     cursor: pointer;
 }
+*/
 
+.my-work-section .works-block .project .img-block:hover .text-block {
+    height: 94px;
+}
 
 /*Contact Section Start*/
 
