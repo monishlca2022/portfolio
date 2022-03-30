@@ -86,7 +86,7 @@ ul {
 /*CUSTOOM CSS*/
 
 .banner {
-/*    position: relative;*/
+    /*    position: relative;*/
     background-image: url("../images/banner-2.jpg");
     background-repeat: no-repeat;
     background-size: auto;
@@ -94,7 +94,7 @@ ul {
     height: 100vh;
     padding: 0;
     margin: 0;
-/*    overflow: hidden;*/
+    /*    overflow: hidden;*/
 }
 
 .banner header {
@@ -189,7 +189,7 @@ ul {
 }
 
 .banner header .header-bottom .primary-nav ul li a {
-    font-family: 'Century Gothic',sans-serif;
+    font-family: 'Century Gothic', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
@@ -203,16 +203,18 @@ ul {
 
 .banner header .header-bottom .primary-nav ul li.active a {
     color: #d39d3c;
-   /* border-bottom: 1px solid #e29d21;*/
+    /* border-bottom: 1px solid #e29d21;*/
 }
 
 .banner header .header-bottom .primary-nav ul li a:hover {
     color: #e29d21;
 }
-.banner header .header-bottom .primary-nav ul li a.hvr-underline-from-center:before{
+
+.banner header .header-bottom .primary-nav ul li a.hvr-underline-from-center:before {
     background-color: #d39d3c;
     height: 1px;
 }
+
 .banner header .header-bottom .mobile-menu {
     display: none;
     text-align: center;
@@ -300,9 +302,11 @@ ul {
     padding: 25px 40px;
     margin: 0;
 }
-.banner .desc .hero-text a ion-icon{
+
+.banner .desc .hero-text a ion-icon {
     vertical-align: middle;
 }
+
 .banner .desc .hero-text a:hover {
     background-color: #fff;
     border: 1px solid #d39d3c;
@@ -335,11 +339,9 @@ ul {
 }
 
 .about-section .img-block {
-/*
-    border-radius: 30px;
-    overflow: hidden;
-*/
     border: 1px solid #000;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .about-section .img-block img {
@@ -600,25 +602,8 @@ ul {
     border-radius: 5px;
     padding: 10px 30px;
     margin: 0;
+    cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*Contact Section Start*/
@@ -648,6 +633,7 @@ ul {
     border-radius: 0;
     border: 1px solid #262B2F;
     background-color: transparent;
+    border-radius: 5px;
     padding: 30px;
     margin-bottom: 30px;
     transition: 0.3s;
@@ -1166,9 +1152,9 @@ footer .address-block .text-block p {
 
     }
 
-.banner .desc .hero-text h1 {
-    font-size: 32px;
-}
+    .banner .desc .hero-text h1 {
+        font-size: 32px;
+    }
 
     .about-section .text-block .bottom-block .btn {
         padding: 18px 36px;
@@ -1185,19 +1171,20 @@ footer .address-block .text-block p {
 }
 
 
-@media screen and (max-width: 370px){
-.banner .desc .hero-text h1 {
-    font-size: 40px;
-    padding: 100px 0 20px 0;
-}
-    .section-subtitle {
-    font-size: 25px;
-}
+@media screen and (max-width: 370px) {
+    .banner .desc .hero-text h1 {
+        font-size: 40px;
+        padding: 100px 0 20px 0;
+    }
 
-.skills-section .all-skills-section .card {
-    min-height: max-content;
-    padding: 30px 20px;
-}
+    .section-subtitle {
+        font-size: 25px;
+    }
+
+    .skills-section .all-skills-section .card {
+        min-height: max-content;
+        padding: 30px 20px;
+    }
 }
 
 
